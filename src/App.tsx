@@ -20,10 +20,10 @@ const App = () => {
         });
     }, []);
 
-    const sendRemoveMessage = () => {
+    const sendConnection = () => {
         const message: ChromeMessage = {
             from: Sender.React,
-            message: "delete logo",
+            message: "send connection",
         }
 
         const queryInfo: chrome.tabs.QueryInfo = {
@@ -46,8 +46,8 @@ const App = () => {
         <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
-                <button onClick={sendRemoveMessage}>Send Connection</button>
-                <p>Response from content:</p>
+                <button onClick={sendConnection}>Send Connection</button>
+                <p>Connection Sent : </p>
                 <p>
                     {responseFromContent}
                 </p>

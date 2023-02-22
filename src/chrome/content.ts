@@ -39,7 +39,7 @@ const messagesFromReactAppListener = (message: ChromeMessage, sender: any, respo
   if (
     sender.id === chrome.runtime.id &&
     message.from === Sender.React &&
-    message.message === "delete logo") {
+    message.message === "send connection") {
     connectWith(0);
   }
 
